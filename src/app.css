@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-black;
+	}
+
+	html.lenis,
+	html.lenis body {
+		height: auto;
+	}
+
+	.lenis.lenis-smooth {
+		scroll-behavior: auto !important;
+	}
+
+	.lenis.lenis-smooth [data-lenis-prevent] {
+		overscroll-behavior: contain;
+	}
+
+	.lenis.lenis-stopped {
+		overflow: hidden;
+	}
+
+	.lenis.lenis-smooth iframe {
+		pointer-events: none;
+	}
+}
+
+@font-face {
+	font-family: 'Lovelo';
+	font-weight: bold;
+	src: url('/fonts/lovelo/Lovelo-Black.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Lovelo';
+	font-weight: normal;
+	src: url('/fonts/lovelo/Lovelo-lineBold.woff2') format('woff2');
+}
+@font-face {
+	font-family: 'Lovelo';
+	font-weight: light;
+	src: url('/fonts/lovelo/Lovelo-lineLight.woff2') format('woff2');
+}
