@@ -1,6 +1,5 @@
 <script lang="ts">
-	// @ts-ignore
-	import kom from '$lib/images/groteKom.jpg?w=2000&format=webp';
+	import kom from '$lib/images/kom.webp';
 	import Logo from '$lib/components/logo.svelte';
 	import gsap from 'gsap';
 	import { onMount } from 'svelte';
