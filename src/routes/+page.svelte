@@ -36,30 +36,7 @@
 </main>
 
 <style>
-	@keyframes fadeIn {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
-	}
-	@keyframes slideUp {
-		from {
-			scale: 4;
-			translate: 0px 20px;
-		}
-		to {
-			scale: 1;
-			translate: 0px 0px;
-		}
-	}
 	.kom {
 		transform-origin: 50% 45%;
 	}
-	/* .kom {
-		animation:
-			fadeIn 4s 1s both,
-			slideUp 3s 1s cubic-bezier(0.33, 1, 0.68, 1) both;
-	} */
 </style>

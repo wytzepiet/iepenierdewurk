@@ -16,12 +16,12 @@
 @font-face {
 	font-family: 'Lovelo';
 	font-weight: normal;
-	src: url('/fonts/lovelo/Lovelo-lineBold.woff2') format('woff2');
+	src: url('/fonts/lovelo/Lovelo-LineBold.woff2') format('woff2');
 }
 @font-face {
 	font-family: 'Lovelo';
 	font-weight: light;
-	src: url('/fonts/lovelo/Lovelo-lineLight.woff2') format('woff2');
+	src: url('/fonts/lovelo/Lovelo-LineLight.woff2') format('woff2');
 }
 
 html.lenis,

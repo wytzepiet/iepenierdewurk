@@ -5,6 +5,9 @@ export default {
 		extend: {},
 		fontFamily: {
 			lovelo: ['Lovelo', 'sans-serif']
+		},
+		fontSize: {
+			'8xl': 'min(8rem, 10vw)'
 		}
 	},
 	plugins: []
