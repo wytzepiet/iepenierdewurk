@@ -161,7 +161,7 @@
 
 <style>
 	.logo {
-		animation: scale 5s cubic-bezier(0.65, 0, 0.35, 1) both;
+		/* animation: scale 5s cubic-bezier(0.65, 0, 0.35, 1) both; */
 		transform-origin: center;
 		width: 80%;
 	}
@@ -171,28 +171,6 @@
 		stroke-linecap: round;
 		stroke-width: 0.5em;
 		/* animation: dash both; */
-	}
-
-	@keyframes dash {
-		0% {
-			opacity: 0;
-		}
-		10% {
-			opacity: 1;
-		}
-		100% {
-			stroke-dashoffset: 0;
-		}
-	}
-	@keyframes scale {
-		0% {
-			scale: 1;
-			/* translate: 100% 0%; */
-		}
-		100% {
-			scale: 1;
-			/* translate: 0% 0%; */
-		}
 	}
 
 	:global(.point) {
