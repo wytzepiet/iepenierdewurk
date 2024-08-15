@@ -5,6 +5,7 @@
 	import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 	import { browser } from '$app/environment';
 	import '../app.css';
+	import 'lenis/dist/lenis.css';
 
 	if (browser) {
 		gsap.registerPlugin(ScrollTrigger);
@@ -12,11 +13,14 @@
 
 	onMount(async () => {
 		const lenis = new Lenis();
-		function raf(time: number) {
-			lenis.raf(time);
-			requestAnimationFrame(raf);
-		}
-		requestAnimationFrame(raf);
+
+		lenis.on('scroll', ScrollTrigger.update);
+
+		gsap.ticker.add((time) => {
+			lenis.raf(time * 1000);
+		});
+
+		gsap.ticker.lagSmoothing(0);
 	});
 	let { children } = $props();
 </script>

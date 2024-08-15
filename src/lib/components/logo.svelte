@@ -21,7 +21,6 @@
 			const duration = Math.max(length / bounds.length, 0.5) * time;
 			// path.style.animationDuration = `${duration}ms`;
 
-			const rect = (el: HTMLElement) => el.getBoundingClientRect();
 			const logo = document.querySelector('.logo') as HTMLElement;
 			const left = (path.getBoundingClientRect().left - bounds.left) / logo.clientWidth;
 			const top =
@@ -44,6 +43,7 @@
 				line.setAttribute('stroke', 'white');
 
 				line.style.animationDelay = `${delay + 1000 + i * durationIncrement}ms`;
+
 				line.classList.add('point');
 				path.parentElement?.appendChild(line);
 			}
